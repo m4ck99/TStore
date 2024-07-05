@@ -1,0 +1,32 @@
+body{
+	margin: 0;
+	overflow: hidden;
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    height: 55px;
+    width: 190px;
+}
+table{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+button:hover {
+    opacity: 0.8;
+}
+#upload {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+#download {
+    background-color: #008CBA; /* Blue */
+    color: white;
+}

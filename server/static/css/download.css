@@ -1,0 +1,10 @@
+html, body{
+	height: 100%;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+}
+th, td{
+	border: 2px solid black;
+	width: 100%;
+}

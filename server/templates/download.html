@@ -1,0 +1,23 @@
+{% block head %}
+<title>Download</title>
+<link rel="stylesheet" href="{{url_for('static', filename='css/download.css')}}">
+{% endblock %}
+{% block body %}
+<body>
+	<div class="content">
+		<h1>Download</h1>
+	<table>
+		<tr>
+			<th>Filename</th>
+			<th>Download</th>
+		</tr>
+		{% for filename in fileNames %}
+			<tr>
+				<td>{{ filename.fileName }}</td>
+				<td><a href="/Download/{{ filename.id }}">Download</a></td>
+			</tr>
+		{% endfor %}
+	</table>
+	</div>
+</body>
+{% endblock %}

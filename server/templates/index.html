@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block head %}
+<title>Test</title>
+<link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+{% endblock %}
+{% block body %}
+<table>
+	<tr>
+		<td>
+			<form action="{{url_for('upload')}}" method="get">
+			<button id="upload" type="submit">Upload</button>
+		</form>
+		</td>
+        </tr>
+	<td><form action="{{url_for('download')}}"i method="get">
+			<button id="download" type="submit">Download</button>
+		</form></td>
+        </tr>
+</table>
+{% endblock %}

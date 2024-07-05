@@ -1,0 +1,48 @@
+html, body {
+    height: 100%; /* Full height to ensure centering */
+    margin: 0; /* Remove default margin */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 100px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    text-align: center; /* Center text inside the container */
+    width: fit-content; /* Adjust width based on content */
+}
+
+.form-container input,
+.form-container label {
+    width: 100%; /* Make elements span the full width of the container */
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px; /* Space between elements */
+}
+
+.form-container #submitbutton {
+    background-color: #007bff; /* Example button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove button border */
+    cursor: pointer; /* Pointer cursor on hover */
+    padding: 10px 20px; /* Adjust padding as needed */
+    width: auto; /* Let the button width adjust based on its content */
+}
+
+.form-container #submitbutton:hover {
+    background-color: #0056b3; /* Darker color on hover */
+}
+
+.form-container label {
+    display: block;
+    font-size: 20px;
+    margin-top: -20px;
+    font-weight: bold;	
+}

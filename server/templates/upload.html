@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block head %}
+<title>Upload</title>
+<link rel="stylesheet" href="{{url_for('static', filename='css/upload.css')}}">
+{% endblock %}
+{% block body %}
+    <div class="form-container">
+	    <form action="{{url_for('upload')}}" method="post">
+        <label for="textbox">File Upload</label>
+        <input type="text" id="location" name="locationtextbox" required placeholder="File Location">
+	<input type="text" id="filename" name="filenametextbox" required placeholder="File Name">
+        <input type="submit" value="Submit" id="submitbutton">
+    </form>
+    </div>
+{% endblock %}
